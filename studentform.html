@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student form</title>
+
+
+    <style>
+        h1{
+            text-align: center;
+            color: blue;    
+            font:bold 30px/1.5 "Arial", sans-serif;
+        }
+        label{
+            font:bold 20px/1.5 "Arial", sans-serif;
+        }
+         button{
+                background-color: blue;
+                color: white;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+         }
+          button:hover{
+                background-color: darkblue;
+         }
+
+            table {
+                    width: 100%;
+                    border-collapse: collapse;
+            }
+            th, td {
+                    padding: 10px;
+                    text-align: left;
+            }
+            th {
+                    background-color: blue;
+                    color: white;
+            }
+            input, select, textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin: 4px 0;
+                    box-sizing: border-box;
+                    border-radius: 5px;
+            }
+            .gender {
+                    display: flex;
+                    gap: 5  px;
+                    
+            }
+           
+           
+
+    </style>
+</head>
+<body>
+
+    <h1>Student Form</h1>
+
+    <label for="name">full name:</label><br>
+    <input type="text" id="name" name="name"><br><br>    
+
+    <label for="email">email:</label><br>
+    <input type="email" id="email" name="email"><br><br> 
+
+    <label for="password">password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <label for="phone">phone number:</label><br>
+    <input type="tel" id="phone" name="phone"><br><br>       
+
+    <label for="date of birth">date of birth:</label><br>
+    <input type="date" id="dob" name="dob"><br><br>  
+
+    <label for="course"> select course:</label><br>     
+    <select id="course" name="course">
+        <option value="cs">c full stack</option>
+        <option value="it">python full stack</option>
+        <option value="ec">java full stack</option>
+    </select><br><br>
+    <label for="gender">gender:</label><br> 
+
+    <div class="gender">
+     <input type="radio" name="gender" value="male">male
+     <input type="radio" name="gender" value="female">female<br><br>
+    </div>
+
+    <label for="address">address:</label><br>
+    <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br> 
+    
+        <button type="submit">register</button> 
+       <br><br>
+       
+    <h1>student data table</h1>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>course</th>
+            <th>city</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>rahul</td>
+            <td>html</td>
+            <td>mumbai</td>
+        </tr>
+         <tr>
+                <td>2</td>
+                <td>snehal</td>
+                <td>css</td>
+                <td>pune</td>
+        </tr>   
+        <tr>
+                    <td>3</td>
+                    <td>amit</td>
+                    <td>javascript</td>
+                    <td>nashik</td>
+         </tr>
+        <tr>
+                    <td>4</td>
+                    <td>priya</td>
+                    <td>react</td>
+                    <td>nagpur</td>
+            
+    </table>
+</body>
+</html>
