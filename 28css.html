@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28may</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            height: 30px;
+            left: 0;
+            top: 0;
+            width: 100%;
+           
+        }
+        .logo p {
+            margin: 0;
+            font-size: 35px;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav ul li {
+            margin-left: 40px;
+        }
+        .nav ul li a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 18px;
+        }
+        .flex {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border: 1px solid #ccc; 
+            flex: 1;
+            text-align: center;
+
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .item {
+            background-color: #e69428;
+            padding: 20px;      
+            border: 1px solid #ccc;
+            text-align: center;
+            height: 50px;
+        }
+        .position {
+            position: relative;
+            height: 200px;
+            background-color: #f0f0f0;
+        }
+        .relative {
+            position: relative;
+            top: 0px;
+            left: 0px;
+            background-color: #ccc;
+            padding: 10px;
+        }
+        .absolute {
+            position: absolute;
+            top: 60px;
+            left: 500px;
+            background-color: #ccc;
+            padding: 10px;
+        }       
+        .fixed {
+            position: fixed;
+            top: 680px;
+            left: 470px;
+            background-color: #0c9e47;
+            padding: 10px;
+        }
+        
+
+        h2 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+        }
+        .box1 {
+            position: relative;
+            width: 550px;
+            height: 100px;
+           
+        
+            border: 1px solid #ccc;
+           
+        }
+        
+        .sticky {
+            position: sticky;
+            top: 2000px;
+            background-color: #77248a;
+            padding: 10px;
+
+        }
+        .static {
+            position: static;
+            background-color: #f0f0f0;
+            padding: 10px;
+            border: 1px solid black;
+           margin-top: 50px;
+
+        }
+        .simple {
+            background-color: #0c0101;
+            padding: 20px;
+            border: 1px solid #ccc; 
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            height: 20px;
+            margin-top: 100px;
+            position: realative;
+        }
+        .box1 .textarea p {
+           text-align: left;
+           top: 20px;
+            
+           }
+
+       
+       
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <p>my website</p>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="#">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </div>
+    
+    </header>
+    <h1>CSS practice assignment</h1>
+    <p>Learn Flexbox, Grid and Positioning</p>
+    <br>
+    <h2>Flexbox Examples</h2>
+    <div class="flex">
+        <div class="box">html</div>
+        <div class="box">css</div>
+        <div class="box">javascript</div>    
+    </div>
+    <h2>Grid Layout Examples</h2>
+    <div class="grid">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>       
+        <div class="item">6</div>
+    </div>
+    <h2>Css positioning values</h2>
+    <div class="position">
+        <div class="relative">Relative</div>
+        <div class="absolute">Absolute</div>
+        <div class="fixed">position:Fixed</div>
+           <div class="box1">
+            <box class="textarea">
+                <p>parent box</p>
+            </box>
+            </div>  
+                    <div class="sticky">position:Sticky</div>
+                    <div class="static">position:Static(default)</div>
+        
+    </div>
+    <div class="simple">
+    <p>simple CSS Assignment</p>
+    </div>  
+    </div>  
+ 
+
+
+
+
+
+</body>
+</html>
